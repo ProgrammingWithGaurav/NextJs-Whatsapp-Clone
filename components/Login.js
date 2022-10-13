@@ -1,11 +1,18 @@
 import { Button } from '@mui/material';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import {auth, provider} from '../firebase';
 
 function Login() {
+    const router = useRouter();
     const signIn = () => {
-        auth.signInWithPopup(provider).catch(alert);
+        auth.signInWithPopup(provider).then(function(result) {
+            router.push('/')
+          }).catch(function(error) {
+            console.log(error.message)
+          })
+        
     }
     return (
         <Container>
