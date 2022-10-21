@@ -2,14 +2,14 @@ import firebase from 'firebase';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAvOvTyyzilOxnPLD8UbfqWUI5bxjzSLOI",
-    authDomain: "react-apps-1abca.firebaseapp.com",
-    projectId: "react-apps-1abca",
-    storageBucket: "react-apps-1abca.appspot.com",
-    messagingSenderId: "54426027347",
-    appId: "1:54426027347:web:02c313d0040efe49e0cda6",
-    measurementId: "G-XE5YM81KQ8"
-  };
+  apiKey: "AIzaSyCn_AIoIGDpuoROIe3Ba8li33heu4FQ0Rw",
+  authDomain: "nextjsapps-366215.firebaseapp.com",
+  projectId: "nextjsapps-366215",
+  storageBucket: "nextjsapps-366215.appspot.com",
+  messagingSenderId: "895482855029",
+  appId: "1:895482855029:web:18f922f36363259a7d823c",
+  measurementId: "G-6RHHXLBVQE"
+};
 
 
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
